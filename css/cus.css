@@ -1,0 +1,59 @@
+.aside{
+    width:20rem;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    z-index: 1041;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+}
+.list-group-item{
+    
+    border-left: 4px solid transparent!important;
+   
+}
+.list-group-item.active{
+    background: transparent;
+    border-color:transparent ;
+    border-left: 4px solid !important;
+    color:#007bff;
+}
+
+.card-icon{
+    
+    width: 2.5rem;
+    height:2.5rem;
+    
+}
+.line-chart{
+    height:15rem;
+}
+.visitor-chart{
+    height:21.5rem;
+}
+
+
+ .aside input:focus{
+    outline: none!important;
+}
+
+@media screen and (max-width:768px) {
+    .aside{
+        position: fixed;
+        top:0;
+        left:-100%;
+        
+    }
+    .aside.show{
+        left: 0;
+        transition: 0.5s;
+    }
+    .aside-body{
+        position: relative!important;
+       
+    }
+}
+
